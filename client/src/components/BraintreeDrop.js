@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { Dimmer, Loader, Segment } from 'semantic-ui-react';
-import { setFlash } from '../actions/flash';
+import { setFlash } from '../reducers/flash';
 import { connect } from 'react-redux';
-import { setHeaders } from '../actions/headers';
+import { setHeaders } from '../reducers/headers';
 import { Redirect } from 'react-router-dom';
 import braintree from 'braintree-web-drop-in';
 import BraintreeDropin from 'braintree-dropin-react';

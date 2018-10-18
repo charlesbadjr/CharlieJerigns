@@ -1,2 +1,0 @@
-class BraintreeController < ApplicationController
-end

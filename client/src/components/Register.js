@@ -13,7 +13,7 @@ class Register extends Component {
     const { password, passwordConfirmation } = this.state
     if (password === passwordConfirmation) {
       dispatch(registerUser(this.state, history));
-    } else dispatch(setFlash('Passwords do not match!, please try again', 'red'));
+    } else dispatch(setFlash('Passwords do not match!, try again', 'red'));
   }
 
   handleChange = (e) => {
