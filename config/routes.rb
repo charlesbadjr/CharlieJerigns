@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  get 'tcn/send'
+  get 'tcn/receive'
+  get 'instagram/list'
   mount_devise_token_auth_for 'User', at: 'api/auth'
   namespace :api do
     #API ROUTES SHOULD GO HERE

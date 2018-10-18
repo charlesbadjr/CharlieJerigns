@@ -46,6 +46,8 @@ GEM
     bcrypt (3.1.12)
     bootsnap (1.3.2)
       msgpack (~> 1.0)
+    braintree (2.91.0)
+      builder (>= 2.0.0)
     builder (3.2.3)
     byebug (10.0.2)
     concurrent-ruby (1.0.5)
@@ -59,6 +61,10 @@ GEM
     devise_token_auth (0.2.0)
       devise (> 3.5.2, < 4.5)
       rails (< 6)
+    dotenv (2.5.0)
+    dotenv-rails (2.5.0)
+      dotenv (= 2.5.0)
+      railties (>= 3.2, < 6.0)
     erubi (1.7.1)
     ffi (1.9.25)
     globalid (0.4.1)
@@ -154,8 +160,10 @@ PLATFORMS
 
 DEPENDENCIES
   bootsnap (>= 1.1.0)
+  braintree
   byebug
   devise_token_auth
+  dotenv-rails
   listen (>= 3.0.5, < 3.2)
   omniauth
   pg (>= 0.18, < 2.0)
